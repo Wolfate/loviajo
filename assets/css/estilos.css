@@ -39,3 +39,148 @@ section.intro a.enter-btn{
 section.intro a.enter-btn:hover{
     background: #03D6D0;
 }
+/*Home*/
+.BarraNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.LineaHorizontal{
+    border-top: 3px solid;
+    color: #FFC200;
+    width: 800px;
+}
+.LyR{
+    display: flex;
+    align-items: center;
+}
+.RedesSociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60px;
+}
+.Login{
+    background-color: #fff;
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: space-around;
+    box-shadow: 1px 1px 4px 0px rgb(0,0,0,0.12);
+}
+.Loginn{
+    display: flex;
+}
+.MainBanner{
+
+}
+.Banner{
+    background-image: url(/pexels-sebastian-voortman-165505\ 1.png);
+    height: 950px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+.Reseñas{
+    background-color: #fff;
+    height: 225px;;
+    width: 850px;
+    border-radius: 10px;
+}
+.MainTxt{
+
+}
+.Whats{
+    background-color:#03D6D0;
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WhatsTxt{
+    color: #fff;
+    display: flex;
+    width: 170px;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+.WaImg{
+    height: 30px;
+}
+.MainHome{
+    height: 5000px
+}
+.MainHome h2{
+    padding-left: 50px;
+}
+.LineaPorque{
+    border: 3px solid #FFC200;
+    width: 30%;
+}
+.MainPorque{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.InfoPorque{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 150px;
+}
+.Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 400px;
+    gap: 20px;
+}
+.icon{
+    height: 90px;
+}
+.InfoPorque2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+.InfoPorque2Txt{
+    width: 750px;
+}
+.BotonInfo{
+    Background-color: #03D6D0;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 115px;
+    justify-content: center;
+}
+.BotonTxt{
+    color: #fff;
+}
+.MainNuestrosClientes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Ruleta{
+    background-color: green;
+    height: 500px;
+    width: 600px;
+}
+.ClientesTxt{
+    width: 450px;
+}
