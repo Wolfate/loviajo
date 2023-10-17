@@ -47,7 +47,7 @@ section.intro a.enter-btn:hover{
     padding: 20px;
 }
 .LineaHorizontal{
-    border-top: 3px solid;
+    border-top: 1.5px solid;
     color: #FFC200;
     width: 800px;
 }
@@ -73,6 +73,7 @@ section.intro a.enter-btn:hover{
 }
 .Loginn{
     display: flex;
+    gap: 15px;
 }
 .MainBanner{
 
@@ -183,4 +184,448 @@ section.intro a.enter-btn:hover{
 }
 .ClientesTxt{
     width: 450px;
+}
+/*Perfil Viajero*/
+.banner-perfil{
+    background: linear-gradient(0deg, #000 0%, rgba(84, 84, 84, 0.78) 40.67%, rgba(217, 217, 217, 0.00) 100%), url(../img/banner-perfil-viajero.webp);
+    height: 560px;
+    background-blend-mode: multiply;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.banner-perfil h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    letter-spacing: 1.92px;
+}
+.cinta-datos{
+    background: #6818D1;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.cinta-datos h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 6.36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.datos-perfil{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+}
+.perfil-izq, .perfil-der{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-izq{
+    border-right: 1px solid #FFC200;
+}
+.perfil-der{
+    align-items: baseline;
+    padding-left: 200px;
+    gap: 35px;
+}
+.perfil-izq img{
+    max-width: 120px;
+}
+.perfil-izq .nombre-user{
+    font-size: 20px;
+    margin: 32px 0;
+}
+.perfil-izq .email-user{
+    font-size: 24px;
+    font-weight: 600;
+}
+.perfil-der .row-datos-user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.perfil-der .row-datos-user .icon-datos{
+    background: #000;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.perfil-der .row-datos-user .icon-datos img{
+    max-width: 30px;
+}
+.preguntas{
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.preguntas.paso-0, .preguntas.paso-5{
+    background-image: url(../img/bg_preguntas.webp);
+}
+.preguntas.paso-1{
+    background-image: url(../img/bg-pregunta-frio-calor.png);
+}
+.preguntas.paso-2{
+    background-image: url(../img/bg-pregunta-horchata-jamaica.png);
+}
+.preguntas.paso-3{
+    background-image: url(../img/bg-pregunta-marvel-dc.png);
+}
+.preguntas.paso-4{
+    background-image: url(../img/bg-pregunta-pizza-pina.png);
+}
+.preguntas .contenedor-form{
+    width: 80%;
+    height: 70%;
+    border-radius: 24px;
+    background: rgba(250, 250, 250, 0.50);
+    box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+.preguntas form, .preguntas .cont-pregunta{
+    height: 100%;
+}
+.preguntas .cont-pregunta{
+    display: none
+}
+.preguntas .cont-pregunta.activo{
+    display: block;
+}
+.preguntas .titulo-pregunta{
+    background-color: rgba(104, 24, 209, 0.8);
+    height: 100px;
+    padding: 40px;
+    border-radius: 24px 24px 0 0;
+}
+.preguntas .titulo-pregunta p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    letter-spacing: 5.83px;
+    text-transform: uppercase;
+}
+.preguntas form input[type="radio"]{
+    display: none;
+}
+.preguntas .row-answers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100% - 100px);
+}
+.preguntas .row-answers .answer-card{
+    background: white;
+    border-radius: 24px;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.12);
+    width: 210px;
+    height: 210px;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.preguntas .row-answers .answer-card .icon-resp-wrap, 
+.preguntas .row-answers .answer-card .icon-resp,
+.preguntas .row-answers .answer-card p{
+    transition: all 0.35s ease;
+}
+.preguntas .row-answers .answer-card:hover{
+    background: #000;
+    transform: scale(1.1);
+}
+.preguntas .row-answers .answer-card:hover p{
+    color: #fff;
+}
+.preguntas .row-answers .answer-card:hover .icon-resp-wrap{
+    background-color: #03D6D0;
+}
+.preguntas .row-answers .answer-card:hover .icon-resp.black{
+    display: block;
+}
+.preguntas .row-answers .answer-card:hover .icon-resp.blue{
+    display: none;
+}
+.preguntas .row-answers .answer-card .icon-resp-wrap{
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.preguntas .row-answers .answer-card .icon-resp{
+    width: 100%;
+}
+.preguntas .row-answers .answer-card .icon-resp.black{
+    display: none;
+}
+.preguntas .row-answers .answer-card p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.preguntas .end-questions{
+    height: 60px;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: 1px solid #03D6D0;
+    background: #03D6D0;
+    box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.12);
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.preguntas .end-questions:hover{
+    background-color: #fff;
+    color: #03D6D0;
+}
+/*Menu Logged-In*/
+.menu-logged{
+    display: flex;
+    gap: 18px;
+}
+.menu-logged > div{
+    height: 40px;
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.menu-logged a{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+    align-items: center;
+}
+.menu-logged .menu-links img.icon-up, .menu-logged .logout-link img.exit-white{
+    display: none;
+}
+.menu-logged .menu-links{
+    background: #000;
+    color: #fff;
+    gap: 8px;
+    position: relative;
+}
+.menu-logged .menu-links .dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 150ms ease;
+}
+.menu-logged .menu-links.active .dropdown-menu{
+    opacity: 1;
+}
+.menu-logged .menu-links .dropdown-menu .pagos-icon-white{
+    display: none;
+}
+.menu-logged .menu-links .dropdown-menu a{
+    gap: 8px;
+}
+.menu-logged .menu-links .dropdown-menu:hover{
+    background: #03D6D0;
+}
+.menu-logged .menu-links .dropdown-menu:hover .pagos-icon-white{
+    display: block;
+}
+.menu-logged .menu-links .dropdown-menu:hover .pagos-icon{
+    display: none;
+}
+.menu-logged .menu-links .dropdown-menu:hover a{
+    color: #fff;
+}
+.menu-logged .menu-links img{
+    width: 22px;
+}
+.menu-logged .menu-links img.icon-down, .menu-logged .menu-links img.icon-up{
+    width: 12px;
+}
+.menu-logged .perfil-link a{
+    gap: 8px;
+    font-weight: 600;
+}
+.menu-logged .perfil-link:hover{
+    background-color: #000;
+}
+.menu-logged .perfil-link:hover a{
+    color: #fff;
+}
+.menu-logged .logout-link{
+    background: #fff;
+    padding: 9px 12px;
+    text-transform: uppercase;
+}
+.menu-logged .logout-link a{
+    gap: 15px;
+}
+.menu-logged .logout-link img{
+    width: 22px;
+}
+.menu-logged .menu-links.active{
+    background: #fff;
+    color: #000;
+}
+.menu-logged .menu-links.active img.icon-up{
+    display: block;
+}
+.menu-logged .menu-links.active img.icon-down{
+    display: none;
+}
+.menu-logged .logout-link:hover{
+    background: #03D6D0;
+}
+.menu-logged .logout-link:hover p{
+    color: #fff;
+}
+.menu-logged .logout-link:hover img.exit-color{
+    display: none;
+}
+.menu-logged .logout-link:hover img.exit-white{
+    display: block;
+}
+footer{
+    background-color: #000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 13px;
+}
+/*Ofertas*/
+.ofertas-hero{
+    min-height: 600px;
+    background: linear-gradient(00deg, #000 0%, rgba(84, 84, 84, 0.78) 60%, rgba(217, 217, 217, 0) 100%), url(../img/fondo-ofertas.webp);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.ofertas-hero h1{
+    color:#fff;
+    width: 800px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.35);
+    letter-spacing: 1.92px;
+    line-height: 110%;
+}
+.ofertas-cont{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+.ofertas-cols{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 43px;
+    width: 85%;
+    align-items: center;
+}
+.ofertas-box{
+    background-color: #fff;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+}
+.ofertas-box:hover{
+    background-color: #6818D1;
+    color: #FFC200;
+}
+.ofertas-box:hover .oferta-desc{
+    color: #fff;
+}
+.ofertas-box:hover .oferta-img{
+    filter: grayscale(0);
+}
+.ofertas-cols .ofertas-box:nth-child(2){
+    margin-top: -50px;
+    background-color: #6818D1;
+    color: #FFC200;
+}
+.ofertas-cols .ofertas-box:nth-child(2) .oferta-desc{
+    color: #fff;
+}
+.ofertas-cols .ofertas-box:nth-child(2) .oferta-img{
+   filter: grayscale(0);
+}
+.ofertas-box .oferta-img{
+    background-size: cover;
+    height: 150px;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.12);
+    background-position: center;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+.ofertas-box .oferta-txt {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ofertas-box .oferta-txt .oferta-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.ofertas-box .oferta-txt .oferta-desc{
+    margin: 15px 0;
+    line-height: 1.35;
+}
+.ofertas-box .oferta-txt .oferta-price{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.ofertas-box .oferta-txt .oferta-btn{
+    background-color: #03D6D0;
+    border: 1px solid #03D6D0;
+    padding: 19px 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.ofertas-box .oferta-txt .oferta-btn:hover{
+    background-color: #fff;
+    color: #000;
 }

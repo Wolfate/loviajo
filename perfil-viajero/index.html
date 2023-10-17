@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Mi Perfil Viajero</title>
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <script src="../assets/js/preguntas.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="BarraNav">
+            <img src="../assets/img/logoloviajo.svg">
+            <div class="LyR">
+                <div class="LineaHorizontal"></div>
+                <div class="RedesSociales">
+                    <img src="../assets/img/facebook.svg">
+                    <img src="../assets/img/instagram.svg">
+                </div>
+            </div>
+            <div class="menu-logged">
+                <div class="menu-links">
+                    <img src="../assets/img/user-login.svg">
+                    <p>Perfil</p>
+                    <img class="icon-down" src="../assets/img/arrow-down.svg">
+                    <img class="icon-up" src="../assets/img/arrow-up.svg">
+                    <div class="dropdown-menu">
+                        <a href="#" class="pagos-link">
+                            <img class="pagos-icon" src="../assets/img/pagos-icon.svg">
+                            <img class="pagos-icon-white" src="../assets/img/pagos-icon-white.svg">
+                            Pagos
+                        </a>
+                    </div>
+                </div>
+                <div class="logout-link">
+                    <a href="#">
+                        <img class="exit-color" src="../assets/img/exit-icon.svg">
+                        <img class="exit-white" src="../assets/img/exit-icon-white.svg">
+                        <p>Salir</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner-perfil">
+            <h1>Mi Perfil de Viajero</h1>
+        </section>
+        <div class="cinta-datos">
+            <h2>Sobre Mí</h2>
+        </div>
+        <section class="datos-perfil">
+            <div class="perfil-izq">
+                <img src="../assets/img/icon-user-perfil.svg">
+                <p class="nombre-user">Uriel Lopez</p>
+                <p class="email-user">uriel@loviajo.com</p>
+            </div>
+            <div class="perfil-der">
+                <div class="row-datos-user">
+                    <div class="icon-datos">
+                        <img src="../assets/img/datos-user-tel-icon.svg">
+                    </div>
+                    <p class="datos-user-txt">55 3051 4434</p>
+                </div>
+                <div class="row-datos-user">
+                    <div class="icon-datos">
+                        <img src="../assets/img/datos-user-address-icon.svg">
+                    </div>
+                    <p class="datos-user-txt">Eje Central Lázaro Cárdenas 908, Portales Norte, 03620, CDMX, México</p>
+                </div>
+                <div class="row-datos-user">
+                    <div class="icon-datos">
+                        <img src="../assets/img/datos-user-fechanac-icon.svg">
+                    </div>
+                    <p class="datos-user-txt">04/09/1992</p>
+                </div>
+            </div>
+        </section>
+        <section class="preguntas paso-0">
+            <div class="contenedor-form">
+                <form data-multi-step>
+                    <div class="cont-pregunta activo" data-step>
+                        <div class="titulo-pregunta"><p>¿Quieres conocer las ofertas de viaje?</p></div>
+                        <div class="row-answers">
+                            <p class="end-questions iniciar-btn">Empezar</p>
+                        </div>
+                    </div>
+                    <div class="cont-pregunta" data-step>
+                        <div class="titulo-pregunta"><p>¿Team Frío o Calor?</p></div>
+                        <input type="radio" name="frio-calor" id="frio" value="frio" required>
+                        <input type="radio" name="frio-calor" id="calor" value="calor" required>
+                        <div class="row-answers">
+                            <div class="answer-card" data-res="frio">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-frio.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-frio-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Frío</p>
+                            </div>
+                            <div class="answer-card" data-res="calor">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-calor.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-calor-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Calor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-pregunta" data-step>
+                        <div class="titulo-pregunta"><p>¿Team Horchata o Jamaica?</p></div>
+                        <input type="radio" name="horch-jam" id="horchata" value="horchata" required>
+                        <input type="radio" name="horch-jam" id="jamaica" value="jamaica" required>
+                        <div class="row-answers">
+                            <div class="answer-card" data-res="horchata">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-horchata.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-horchata-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Horchata</p>
+                            </div>
+                            <div class="answer-card" data-res="jamaica">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-jamaica.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-jamaica-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Jamaica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-pregunta" data-step>
+                        <div class="titulo-pregunta"><p>¿Team Marvel o DC?</p></div>
+                        <input type="radio" name="marv-dc" id="marvel" value="marvel" required>
+                        <input type="radio" name="marv-dc" id="dc" value="dc" required>
+                        <div class="row-answers">
+                            <div class="answer-card" data-res="marvel">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-marvel.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-marvel-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Marvel</p>
+                            </div>
+                            <div class="answer-card" data-res="dc">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-dc.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-dc-black.svg" class="icon-resp black">
+                                </div>
+                                <p>DC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-pregunta" data-step>
+                        <div class="titulo-pregunta"><p>¿Team Pizza con o sin Piña?</p></div>
+                        <input type="radio" name="con-sin" id="conpina" value="conpina" required>
+                        <input type="radio" name="con-sin" id="sinpina" value="sinpina" required>
+                        <div class="row-answers">
+                            <div class="answer-card" data-res="conpina">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-pina.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-pina-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Con Piña</p>
+                            </div>
+                            <div class="answer-card" data-res="sinpina">
+                                <div class="icon-resp-wrap">
+                                    <img src="../assets/img/icon-team-sinpina.svg" class="icon-resp blue">
+                                    <img src="../assets/img/icon-team-sinpina-black.svg" class="icon-resp black">
+                                </div>
+                                <p>Sin Piña</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-pregunta" data-step>
+                        <div class="titulo-pregunta"><p>¿Listo?</p></div>
+                        <div class="row-answers">
+                            <a href="#" class="end-questions" id="form-end">Ver ofertas</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Lo Viajo - Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.querySelector(".menu-links").addEventListener('click', function(){
+            document.querySelector(".menu-links").classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
