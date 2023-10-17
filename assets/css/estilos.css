@@ -61,37 +61,111 @@ section.intro a.enter-btn:hover{
     justify-content: space-evenly;
     width: 60px;
 }
-.Login{
+.btnLogin{
     background-color: #fff;
+    cursor: pointer;
+    border: none;
     height: 50px;
     width: 140px;
     display: flex;
     align-items: center;
     border-radius: 8px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-shadow: 1px 1px 4px 0px rgb(0,0,0,0.12);
 }
-.Loginn{
+.modal{
+    background-color: black;
+    width: 1000px;
+    border-radius: 45px;
+}
+.ModalTtx{
+    color: white;
+}
+.ModalTtx a{
+    text-decoration: none;
+    color: #03D6D0;
+}
+.ModalTtx a:hover{
+    color: red;
+}
+.modal1{
     display: flex;
+}
+.RegistroIzq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+.form{
+
+}
+.FormRegistro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.Registro{
+    height: 50px;
+    width: 240px;
+    padding-left: 15px;
+    background-color: black;
+    color: #fff;
+}
+.FormRegistro2{
+    display: flex;
+    gap: 10px;
+}
+.RegistroTxt{
+    color: #fff;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.RegistroTxt a{
+    color: #03D6D0;
+    text-decoration: none;
+}
+.RegistroTxt a:hover{
+    color: red;
+}
+.btn-Registro{
+    color: white;
+    background-color: #03D6D0;
+    height: 35px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+}
+.RegistroDer{
+    background-image: url(/icon/close.svg);
 }
 .MainBanner{
 
 }
 .Banner{
     background-image: url(/pexels-sebastian-voortman-165505\ 1.png);
+    opacity: 0.8;
     height: 950px;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     margin-bottom: 75px;
 }
+.Banner h1{
+    font-size: 54px;
+    color: white;
+}
 .Reseñas{
-    background-color: #fff;
-    height: 225px;;
-    width: 850px;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 950px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 .MainTxt{
 
@@ -105,6 +179,9 @@ section.intro a.enter-btn:hover{
     align-items: center;
     justify-content: center;
 }
+.WhatsTxt a{
+    text-decoration: none;
+}
 .WhatsTxt{
     color: #fff;
     display: flex;
@@ -115,9 +192,6 @@ section.intro a.enter-btn:hover{
 }
 .WaImg{
     height: 30px;
-}
-.MainHome{
-    height: 5000px
 }
 .MainHome h2{
     padding-left: 50px;
@@ -172,15 +246,162 @@ section.intro a.enter-btn:hover{
 }
 .MainNuestrosClientes{
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .Ruleta{
-    background-color: green;
-    height: 500px;
-    width: 600px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .ClientesTxt{
-    width: 450px;
+    width: 650px;
 }
+.Crew{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+}
+.MainCrew{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CrewTxt{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.CrewTxt h3{
+    font-size: 32px;
+    display: flex;
+    gap: 5px;
+}
+.LineaCrew{
+    border: 1px solid #FFC200;
+    width: 800px;
+}
+.SeleccionCrew{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.SeleccionCrew img{
+    width: 125px;
+}
+.Selecc{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 25px;
+}
+.Selecc:hover{
+    background-color: black;
+}
+.SeleccTxt{
+    color: white;
+    background-color: #03D6D0;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SeleccTxt:hover{
+    background-color: white;
+    color: black;
+}
+/*Ingreso*/
+.IngresoGeneral{
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Ingreso{
+    background-color: white;
+    width: 1000px;
+    height: 550px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+.IngresoTxt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.IngresoTxt h1{
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.cuadroTxt{
+    width: 400px;
+    height: 40px;
+  }
+  input{
+    letter-spacing: 1px;
+    border: 1px solid #FFC200;
+    padding-left: 15px;
+  }
+  input::placeholder{
+    color: #000000;
+    letter-spacing: 1px;
+  }
+  .btn-fila{
+    margin-top: 25px;
+  }
+  .btnEnvio{
+    background-color: #03D6D0;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    display: flex;
+    padding: 8px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .NoCuenta{
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .NoCuentaTxt{
+
+  }
+.NoCuentaTxt a{
+    text-decoration: none;
+    color: #03D6D0;
+  }
+  .NoCuentaTxt a:hover{
+    color: red;
+  }
+  .Derechos{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+  .DerechosTxt{
+    color: white;
+  }
+
