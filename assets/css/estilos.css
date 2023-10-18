@@ -74,9 +74,15 @@ section.intro a.enter-btn:hover{
     box-shadow: 1px 1px 4px 0px rgb(0,0,0,0.12);
 }
 .modal{
-    background-color: black;
-    width: 1000px;
-    border-radius: 45px;
+    width: 100vw;
+    min-height: 900px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgb(0 0 0 / 40%);
+    align-items: center;
 }
 .ModalTtx{
     color: white;
@@ -90,15 +96,19 @@ section.intro a.enter-btn:hover{
 }
 .modal1{
     display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 45px;
+    justify-content: center;
 }
 .RegistroIzq{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 650px;
     padding: 25px;
-}
-.form{
-
+    color: white;
+    gap: 10px ;
 }
 .FormRegistro{
     display: grid;
@@ -107,7 +117,14 @@ section.intro a.enter-btn:hover{
 }
 .Registro{
     height: 50px;
-    width: 240px;
+    width: 270px;
+    padding-left: 15px;
+    background-color: black;
+    color: #fff;
+}
+.Registro1{
+    height: 50px;
+    width: 576px;
     padding-left: 15px;
     background-color: black;
     color: #fff;
@@ -115,12 +132,13 @@ section.intro a.enter-btn:hover{
 .FormRegistro2{
     display: flex;
     gap: 10px;
+    flex-direction: column;
 }
 .RegistroTxt{
     color: #fff;
     margin-top: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .RegistroTxt a{
     color: #03D6D0;
@@ -131,21 +149,31 @@ section.intro a.enter-btn:hover{
 }
 .btn-Registro{
     color: white;
-    background-color: #03D6D0;
-    height: 35px;
+    background-color: rgb(3, 214, 208);
+    height: 50px;
     width: 150px;
     border-radius: 25px;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
+    font-size: 24px;
 }
 .RegistroDer{
-    background-image: url(/icon/close.svg);
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+}
+.RegistroSalir{
+    position: absolute;
+    left: 87%;
+    bottom: 90%;
+    cursor: pointer;
 }
 .MainBanner{
 
 }
 .Banner{
-    background-image: url(/pexels-sebastian-voortman-165505\ 1.png);
+    background: url(/pexels-sebastian-voortman-165505\ 1.svg);
     opacity: 0.8;
     height: 950px;
     background-size: cover;
@@ -161,14 +189,31 @@ section.intro a.enter-btn:hover{
 }
 .Reseñas{
     background-color: rgb(255, 255, 255);
-    height: 300px;
+    height: 350px;
     width: 950px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+.ReseñaFlecha{
+    cursor: pointer;
+}
+.ReseñaQuote{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.ReseñaQuote2{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
 }
 .MainTxt{
-
+    width: 650px;
+    display: flex;
+    justify-content: center;
 }
 .Whats{
     background-color:#03D6D0;
@@ -178,6 +223,7 @@ section.intro a.enter-btn:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .WhatsTxt a{
     text-decoration: none;
@@ -307,6 +353,7 @@ section.intro a.enter-btn:hover{
     align-items: center;
     gap: 40px;
     border-radius: 25px;
+    cursor: pointer;
 }
 .Selecc:hover{
     background-color: black;

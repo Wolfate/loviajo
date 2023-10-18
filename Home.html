@@ -14,20 +14,20 @@
 <body>
     <header>
         <div class="BarraNav">
-            <img src="/LogoLoViajo.png" alt="">
+            <img src="/logo_horizontal 1 (2).svg" alt="">
             <div class="LyR">
                 <div class="LineaHorizontal"></div>
                 <div class="RedesSociales">
-                    <img src="/Facebook.png" alt="">
-                    <img src="/Instagram.png" alt="">
+                    <img src="/icon/face.svg" alt="">
+                    <img src="/icon/insta.svg" alt="">
                 </div>
             </div>
             <div class="Login">
-                    <button class="btnLogin"><img src="/Login.png" alt="">INGRESAR</button>
+                    <button class="btnLogin"><img src="/icon/Login.svg" alt="">INGRESAR</button>
             </div>
         </div>
     </header>
-    <dialog id="Modal" class="modal">
+    <div id="Modal" class="modal">
         <div class="modal1">
             <div  class="RegistroIzq">
                 <img src="/logo_horizontal 1.svg" alt="">
@@ -41,28 +41,35 @@
                             <input class="Registro" type="date" placeholder="Fecha de nacimiento*" maxlength="50" required id="inp-nacimiento" class="cuadroTxt"><br><br>
                         </div>
                         <div class="FormRegistro2">
-                            <input class="Registro" type="text" placeholder="Correo*" maxlength="50" required id="inp-correo" class="cuadroTxt">
-                            <input class="Registro" type="text" placeholder="Contraseña*" maxlength="50" required id="inp-contraseña" class="cuadroTxt">
+                            <input class="Registro1" type="text" placeholder="Correo*" maxlength="50" required id="inp-correo" class="cuadroTxt">
+                            <input class="Registro1" type="text" placeholder="Contraseña*" maxlength="50" required id="inp-contraseña" class="cuadroTxt">
                         </div>
                     
                     
                 </form>
                 </div>
                 <div class="RegistroTxt">
-                    <button id="btn-Cerrar" class="btn-Registro">Entrar</button>
+                    <button class="btn-Registro">Entrar</button>
                     <p>Ya tengo cuenta. <a href="Ingreso.html">Ingresar</a></p>
                 </div>
             </div>
             <div class="RegistroDer">
                 <img src="/pexels-rebeca-gonçalves-2.svg" alt="">
+                <div id="btn-Cerrar" class="RegistroSalir">
+                    <img src="/icon/close.svg" alt="">
+                </div>
             </div>
         </div>
-    </dialog>
+    </div>
 
     <div class="MainBanner">
         <div class="Banner">
             <h1>Menos pretextos, más viajes</h1>
             <div class="Reseñas">
+                <div class="ReseñaQuote">
+                    <img src="/icon/MarkIzquierda.svg" alt="">
+                </div>
+                <img class="ReseñaFlecha" src="/icon/flecha izq.svg" alt="">
                 <div class="MainTxt">
                     <p>Quiero agradecer a LoViajo, porque no habría pasado unas vacaciones tan perfectas 
                         sin la atención y facilidades que me dieron. Si quieren salir y no preocuparse por
@@ -70,10 +77,14 @@
                         LoViajo. ¿Cuál será la próxima parada?
                         Aldo Rivas</p>
                 </div>
+                <img class="ReseñaFlecha" src="/icon/flecha der.svg" alt="">
+                <div class="ReseñaQuote2">
+                    <img src="/icon/MarkDerecha.svg" alt="">
+                </div>
             </div>
             <div class="Whats">
                     <div class="WhatsTxt">
-                        <img class="WaImg" src="/WA.png" alt="">
+                        <img class="WaImg" src="/icon/WA.svg" alt="">
                         ¡CONTÁCTANOS!
                     </div>
                 </div>
@@ -87,15 +98,15 @@
         <div class="MainPorque">
             <div class="InfoPorque">
                 <div class="Info">
-                    <img class="icon" src="/icon/Avion.png" alt="">
+                    <img class="icon" src="/icon/Avion.svg" alt="">
                     somos Expertazos en destinos de playa nacionales.
                 </div>
                 <div class="Info">
-                    <img class="icon" src="/icon/Globos.png" alt="">
+                    <img class="icon" src="/icon/Globos.svg" alt="">
                     organizamos tus pachangas, eventos y convenciones
                 </div>
                 <div class="Info">
-                    <img class="icon" src="/icon/Mapa.png" alt="">
+                    <img class="icon" src="/icon/Mapa.svg" alt="">
                     conoce nuestros Circuitos internacionales
                 </div>
             </div>
@@ -131,9 +142,9 @@
                             <p>YA ME LA SÉ</p>
                         </div>
                     </div>
-                    <div class="Selecc" id="btn-Modal">
+                    <div class="Selecc">
                         <img src="/Frame.svg" alt="">
-                        <div class="SeleccTxt">
+                        <div id="btn-Modal" class="SeleccTxt">
                             <p>¡QUIERO SER PARTE!</p>
                         </div>
                     </div>
