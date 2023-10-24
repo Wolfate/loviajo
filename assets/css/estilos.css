@@ -74,9 +74,15 @@ section.intro a.enter-btn:hover{
     box-shadow: 1px 1px 4px 0px rgb(0,0,0,0.12);
 }
 .modal{
-    background-color: black;
-    width: 1000px;
-    border-radius: 45px;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
 }
 .ModalTtx{
     color: white;
@@ -90,24 +96,45 @@ section.intro a.enter-btn:hover{
 }
 .modal1{
     display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 45px;
+    justify-content: center;
+    gap: 25px;
 }
 .RegistroIzq{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 650px;
     padding: 25px;
+    color: white;
+    gap: 10px ;
 }
-.form{
-
+.RegistroIzq img{
+    width: 50%;
 }
 .FormRegistro{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.Registro::placeholder{
+    color: white;
+}
+.Registro1::placeholder{
+    color: white;
+}
 .Registro{
     height: 50px;
-    width: 240px;
+    width: 300px;
+    padding-left: 15px;
+    background-color: black;
+    color: #fff;
+}
+.Registro1{
+    height: 50px;
+    width: 610px;
     padding-left: 15px;
     background-color: black;
     color: #fff;
@@ -115,12 +142,13 @@ section.intro a.enter-btn:hover{
 .FormRegistro2{
     display: flex;
     gap: 10px;
+    flex-direction: column;
 }
 .RegistroTxt{
     color: #fff;
     margin-top: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .RegistroTxt a{
     color: #03D6D0;
@@ -131,21 +159,31 @@ section.intro a.enter-btn:hover{
 }
 .btn-Registro{
     color: white;
-    background-color: #03D6D0;
-    height: 35px;
+    background-color: rgb(3, 214, 208);
+    height: 50px;
     width: 150px;
     border-radius: 25px;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
+    font-size: 24px;
 }
 .RegistroDer{
-    background-image: url(/icon/close.svg);
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+}
+.RegistroSalir{
+    position: absolute;
+    left: 87%;
+    bottom: 90%;
+    cursor: pointer;
 }
 .MainBanner{
 
 }
 .Banner{
-    background-image: url(/pexels-sebastian-voortman-165505\ 1.png);
+    background: url(/assets/img/pexels-sebastian-voortman-165505\ 1.svg);
     opacity: 0.8;
     height: 950px;
     background-size: cover;
@@ -161,23 +199,55 @@ section.intro a.enter-btn:hover{
 }
 .Reseñas{
     background-color: rgb(255, 255, 255);
-    height: 300px;
+    height: 350px;
     width: 950px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+.ReseñaFlecha{
+    cursor: pointer;
+}
+.ReseñaQuote{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.ReseñaQuote2{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+#ReseñaMain{
+    width: 800px;
+    height: 200px;
+    overflow: hidden;   
 }
 .MainTxt{
-
+    display: flex;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    gap: 50px;
+    align-items: center;
 }
 .Whats{
     background-color:#03D6D0;
+    color: white;
     height: 50px;
     width: 250px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+}
+.Whats:hover{
+    background-color: white;
+    color: black;
 }
 .WhatsTxt a{
     text-decoration: none;
@@ -307,9 +377,13 @@ section.intro a.enter-btn:hover{
     align-items: center;
     gap: 40px;
     border-radius: 25px;
+    cursor: pointer;
 }
 .Selecc:hover{
     background-color: black;
+}
+.Selecc a{
+    text-decoration: none;
 }
 .SeleccTxt{
     color: white;
@@ -346,6 +420,7 @@ section.intro a.enter-btn:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 .IngresoTxt h1{
     text-transform: uppercase;
@@ -383,9 +458,6 @@ section.intro a.enter-btn:hover{
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
-  }
-  .NoCuentaTxt{
-
   }
 .NoCuentaTxt a{
     text-decoration: none;
