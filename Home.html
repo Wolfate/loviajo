@@ -14,68 +14,121 @@
 <body>
     <header>
         <div class="BarraNav">
-            <img src="/LogoLoViajo.png" alt="">
+            <img src="/assets/img/logoloviajo.svg" alt="">
             <div class="LyR">
                 <div class="LineaHorizontal"></div>
                 <div class="RedesSociales">
-                    <img src="/Facebook.png" alt="">
-                    <img src="/Instagram.png" alt="">
+                    <img src="/assets/img/facebook.svg" alt="">
+                    <img src="/assets/img/instagram.svg" alt="">
                 </div>
             </div>
             <div class="Login">
-                    <button class="btnLogin"><img src="/Login.png" alt="">INGRESAR</button>
+                    <button class="btnLogin"><img src="/assets/img/user-login.svg" alt="">INGRESAR</button>
             </div>
         </div>
     </header>
-    <dialog id="Modal" class="modal">
+    <div id="Modal" class="modal">
         <div class="modal1">
             <div  class="RegistroIzq">
-                <img src="/logo_horizontal 1.svg" alt="">
+                <img src="/assets/img/logoloviajo.svg" alt="">
                 <h2>REGISTRARME</h2>
+                <form action="">
                 <div class="form">
-                    <form action="">
                         <div class="FormRegistro">
                             <input class="Registro" type="text" placeholder="Nombre*" maxlength="50" required id="inp-nombre" class="cuadroTxt">
                             <input class="Registro" type="text"placeholder="Apellido*" maxlength="50" required id="inp-apellido" class="cuadroTxt">
                             <input class="Registro" type="tel" placeholder="Teléfono" maxlength="10" required id="inp-telefono" class="cuadroTxt">
-                            <input class="Registro" type="date" placeholder="Fecha de nacimiento*" maxlength="50" required id="inp-nacimiento" class="cuadroTxt"><br><br>
+                            <input class="Registro" type="date" placeholder="Fecha de nacimiento*" maxlength="50" required id="inp-nacimiento" class="cuadroTxt">
                         </div>
                         <div class="FormRegistro2">
-                            <input class="Registro" type="text" placeholder="Correo*" maxlength="50" required id="inp-correo" class="cuadroTxt">
-                            <input class="Registro" type="text" placeholder="Contraseña*" maxlength="50" required id="inp-contraseña" class="cuadroTxt">
+                            <input class="Registro1" type="text" placeholder="Correo*" maxlength="50" required id="inp-correo" class="cuadroTxt">
+                            <input class="Registro1" type="text" placeholder="Contraseña*" maxlength="50" required id="inp-contraseña" class="cuadroTxt">
                         </div>
                     
                     
                 </form>
                 </div>
                 <div class="RegistroTxt">
-                    <button id="btn-Cerrar" class="btn-Registro">Entrar</button>
+                    <button class="btn-Registro">Entrar</button>
                     <p>Ya tengo cuenta. <a href="Ingreso.html">Ingresar</a></p>
                 </div>
             </div>
             <div class="RegistroDer">
-                <img src="/pexels-rebeca-gonçalves-2.svg" alt="">
+                <img src="/assets/img/pexels-rebeca-gonçalves-2.svg" alt="">
+                <div id="btn-Cerrar" class="RegistroSalir">
+                    <img src="/assets/img/close.svg" alt="">
+                </div>
             </div>
         </div>
-    </dialog>
+    </div>
 
     <div class="MainBanner">
         <div class="Banner">
             <h1>Menos pretextos, más viajes</h1>
             <div class="Reseñas">
-                <div class="MainTxt">
-                    <p>Quiero agradecer a LoViajo, porque no habría pasado unas vacaciones tan perfectas 
-                        sin la atención y facilidades que me dieron. Si quieren salir y no preocuparse por
-                        ABSOLUTAMENTE NADA, sin duda pregunten por los paquetes todo incluido que tiene
-                        LoViajo. ¿Cuál será la próxima parada?
-                        Aldo Rivas</p>
+                <div class="ReseñaQuote">
+                    <img src="/assets/img/MarkIzquierda.svg" alt="">
+                </div>
+                <div id="ReseñaMain">
+                    <div class="MainTxt" id="itemReseña-1">
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-3">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha izq.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="tarjetaReseña">
+                            <p>Quiero agradecer a LoViajo, porque no habría pasado unas vacaciones tan perfectas 
+                                sin la atención y facilidades que me dieron. Si quieren salir y no preocuparse por
+                                ABSOLUTAMENTE NADA, sin duda pregunten por los paquetes todo incluido que tiene
+                                LoViajo. ¿Cuál será la próxima parada? <br><br><br>
+                                <b>Aldo Rivas</b></p>
+                        </div>
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-2">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha der.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="MainTxt" id="itemReseña-2">
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-1  ">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha izq.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="tarjetaReseña">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quisquam nam temporibus culpa distinctio voluptatum iusto officiis. Sint ratione nostrum voluptates, illo in, esse ad facere cum, itaque ipsa voluptas. <br><br><br>
+                                <b>Andres Lionel</b></p>
+                        </div>
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-3">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha der.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="MainTxt" id="itemReseña-3">
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-2">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha izq.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="tarjetaReseña">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum ipsam id cupiditate dignissimos nam, nesciunt excepturi rem corrupti architecto repellendus dolores distinctio facilis adipisci amet ab quo minima quos. <br><br><br>
+                                <b>Neymar Jr.</b></p>
+                        </div>
+                        <div class="ReseñaFlecha">
+                            <a href="#itemReseña-1">
+                                <img class="ReseñaFlecha" src="/assets/img/flecha der.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ReseñaQuote2">
+                    <img src="/assets/img/MarkDerecha.svg" alt="">
                 </div>
             </div>
             <div class="Whats">
-                    <div class="WhatsTxt">
-                        <img class="WaImg" src="/WA.png" alt="">
+                        <img class="WaImg" src="/assets/img/WA.svg" alt="">
                         ¡CONTÁCTANOS!
-                    </div>
                 </div>
         </div>
     </div>
@@ -87,15 +140,15 @@
         <div class="MainPorque">
             <div class="InfoPorque">
                 <div class="Info">
-                    <img class="icon" src="/icon/Avion.png" alt="">
+                    <img class="icon" src="/assets/img/Avion.svg" alt="">
                     somos Expertazos en destinos de playa nacionales.
                 </div>
                 <div class="Info">
-                    <img class="icon" src="/icon/Globos.png" alt="">
+                    <img class="icon" src="/assets/img/Globos.svg" alt="">
                     organizamos tus pachangas, eventos y convenciones
                 </div>
                 <div class="Info">
-                    <img class="icon" src="/icon/Mapa.png" alt="">
+                    <img class="icon" src="/assets/img/Mapa.svg" alt="">
                     conoce nuestros Circuitos internacionales
                 </div>
             </div>
@@ -111,29 +164,31 @@
                 excepturi reprehenderit atque laboriosam accusantium a quidem consequatur.
             </div>
             <div class="Ruleta">
-                <img src="/Cliente1.svg" alt="">
-                <img src="/Cliente2.svg" alt="">
-                <img src="/Cliente3.svg" alt="">
-                <img src="/Cliente4.svg" alt="">
+                <img src="/" alt="">
+                <img src="/" alt="">
+                <img src="/" alt="">
+                <img src="/" alt="">
 
             </div>
         </div>
         <div class="Crew">
             <div class="MainCrew">
                 <div class="CrewTxt">
-                    <h3>¿Ya eres parte de CREW<img src="/logo_horizontal 2.svg" alt=""> ? </h3>
+                    <h3>¿Ya eres parte de CREW<img src="/assets/img/logo_horizontal 2.svg" alt=""> ? </h3>
                     <div class="LineaCrew"></div>
                 </div>
                 <div class="SeleccionCrew">
                     <div class="Selecc">
-                        <img src="/logo_vertical 1.svg" alt="">
-                        <div class="SeleccTxt">
-                            <p>YA ME LA SÉ</p>
-                        </div>
+                        <img src="/assets/img/logo_vertical 1.svg" alt="">
+                        <a href="Ingreso.html">
+                            <div class="SeleccTxt">
+                                <p>YA ME LA SÉ</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="Selecc" id="btn-Modal">
-                        <img src="/Frame.svg" alt="">
-                        <div class="SeleccTxt">
+                    <div class="Selecc">
+                        <img src="/assets/img/Frame.svg" alt="">
+                        <div id="btn-Modal" class="SeleccTxt">
                             <p>¡QUIERO SER PARTE!</p>
                         </div>
                     </div>
