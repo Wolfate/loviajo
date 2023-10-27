@@ -47,7 +47,7 @@ section.intro a.enter-btn:hover{
     padding: 20px;
 }
 .LineaHorizontal{
-    border-top: 1.5px solid;
+    border-top: 3px solid;
     color: #FFC200;
     width: 800px;
 }
@@ -61,82 +61,306 @@ section.intro a.enter-btn:hover{
     justify-content: space-evenly;
     width: 60px;
 }
-.Login{
-    background-color: #fff;
-    height: 50px;
-    width: 140px;
+a.Loginn{
     display: flex;
+    text-decoration: none;
+    color: #000;
     align-items: center;
-    border-radius: 8px;
-    justify-content: space-around;
-    box-shadow: 1px 1px 4px 0px rgb(0,0,0,0.12);
-}
-.Loginn{
-    display: flex;
     gap: 15px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 9px 16px;
+    transition: all 0.3s ease;
 }
-.MainBanner{
-
+a.Loginn img.user-icon-white{
+    display: none;
 }
-.Banner{
-    background-image: url(/pexels-sebastian-voortman-165505\ 1.png);
-    height: 950px;
-    background-size: cover;
+a.Loginn:hover{
+    background-color: #03D6D0;
+    color: #fff;
+}
+a.Loginn:hover img.user-icon-white{
+    display: block;
+}
+a.Loginn:hover img.user-icon-blue{
+    display: none;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgb(0 0 0 / 40%);
+    align-items: center;
+    top: 0;
+}
+.ModalTtx{
+    color: white;
+}
+.ModalTtx a{
+    text-decoration: none;
+    color: #03D6D0;
+}
+.ModalTtx a:hover{
+    color: red;
+}
+.modal1{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 45px;
+    justify-content: center;
+}
+.RegistroIzq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    padding-left: 50px;
+    color: white;
+    gap: 10px ;
+}
+.RegistroIzq .logo-registro{
+    margin-bottom: 36px;
+}
+.RegistroIzq h2{
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+::placeholder {
+    color: white !important;
+    opacity: 1;
+}
+.form{
+    width: 550px;
+}
+.FormRegistro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-bottom: 14px;
+}
+.Registro{
+    height: 50px;
+    padding-left: 15px;
+    background-color: black;
+    color: #fff;
+}
+.Registro1{
+    height: 50px;
+    padding-left: 15px;
+    background-color: black;
+    color: #fff;
+}
+.FormRegistro2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.RegistroTxt{
+    color: #fff;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    align-items: center;
+}
+.RegistroTxt a{
+    color: #03D6D0;
+    text-decoration: none;
+}
+.RegistroTxt a:hover{
+    text-decoration: underline;
+}
+.btn-Registro{
+    color: white;
+    background-color: #03D6D0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 16px 32px;
+    border: 1px solid #03D6D0;
+    transition: all 0.3s ease;
+}
+.btn-Registro:hover{
+    background-color: white;
+    color: #000;
+}
+.RegistroDer{
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+}
+.RegistroSalir{
+    position: absolute;
+    left: 87%;
+    bottom: 90%;
+    cursor: pointer;
+}
+.Banner{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/fondo-banner-principal.webp);
+    background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    padding: 60px 0;
     align-items: center;
     flex-direction: column;
     margin-bottom: 75px;
 }
+.Banner h1{
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.35);
+    margin-bottom: 30px;
+}
 .Reseñas{
-    background-color: #fff;
-    height: 225px;;
-    width: 850px;
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 39px;
+    padding: 90px 0px;
+    width: 950px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 81px;
+    justify-content: space-around;
+}
+/*Camacho*/
+.ReseñaFlecha{
+    cursor: pointer;
+}
+.ReseñaQuote{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.ReseñaQuote2{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+#ReseñaMain{
+    width: 800px;
+    height: 200px;
+    overflow: hidden;   
 }
 .MainTxt{
-
+    display: flex;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    gap: 50px;
+    align-items: center;
+}
+/*
+#ReseñaMain{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;   
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.ReseñaFlecha{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.ReseñaFlecha.flecha-izq{
+    left: 25px;
+}
+.ReseñaFlecha.flecha-der{
+    right: 25px;
+}
+.ReseñaQuote{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.ReseñaQuote2{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+.MainTxt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    line-height: 1.35;
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.tarjetaReseña{
+    width: 80%;
+    height: 50%;
+}*/
+.MainTxt .resena-nombre{
+    font-weight: 700;
+    margin-top: 30px;
 }
 .Whats{
     background-color:#03D6D0;
-    height: 50px;
-    width: 250px;
-    border-radius: 15px;
+    padding: 10px 30px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.WhatsTxt{
+    cursor: pointer;
     color: #fff;
-    display: flex;
-    width: 170px;
-    justify-content: space-around;
-    align-items: center;
     text-decoration: none;
+    gap: 12px;
+    border: 1px solid #03D6D0;
+    font-size: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
 }
-.WaImg{
-    height: 30px;
+.Whats img.wa-blue{
+    display: none;
 }
-.MainHome{
-    height: 5000px
+.Whats:hover{
+    background-color: #fff;
+    color: #000;
+    text-shadow: none;
+}
+.Whats:hover img.wa-blue{
+    display: block;
+}
+.Whats:hover img.wa-white{
+    display: none;
 }
 .MainHome h2{
     padding-left: 50px;
 }
 .LineaPorque{
-    border: 3px solid #FFC200;
+    border: 1px solid #FFC200;
     width: 30%;
 }
 .MainPorque{
-    margin-top: 50px;
-    margin-bottom: 150px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
 }
 .InfoPorque{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 50px;
-    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 90%;
 }
 .Info{
     display: flex;
@@ -144,20 +368,17 @@ section.intro a.enter-btn:hover{
     justify-content: space-between;
     text-transform: uppercase;
     width: 400px;
-    gap: 20px;
+    gap: 28px;
 }
-.icon{
-    height: 90px;
-}
-.InfoPorque2{
+.Info .info-icon-box{
+    background-color: #000;
+    border-radius: 50%;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 150px;
-}
-.InfoPorque2Txt{
-    width: 750px;
+    justify-content: center;
 }
 .BotonInfo{
     Background-color: #03D6D0;
@@ -173,17 +394,177 @@ section.intro a.enter-btn:hover{
 }
 .MainNuestrosClientes{
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .Ruleta{
-    background-color: green;
-    height: 500px;
-    width: 600px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.Ruleta .logos-clientes{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(120px * 16);
+}
+.Ruleta .logos-clientes .slide{
+    width: 120px;
+}
+.Ruleta .logos-clientes img{
+    width: 100%;
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-120px * 8));
+        transform: translateX(calc(-120px * 8));
+    }
 }
 .ClientesTxt{
-    width: 450px;
+    width: 650px;
+}
+.Crew{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+.MainCrew{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CrewTxt{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.CrewTxt h3{
+    font-size: 32px;
+    display: flex;
+    gap: 5px;
+}
+.LineaCrew{
+    border: 1px solid #FFC200;
+    width: 800px;
+}
+.SeleccionCrew{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.SeleccionCrew img{
+    width: 125px;
+}
+.Selecc{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 39px;
+    cursor: default;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+.Selecc:hover{
+    background-color: black;
+}
+.SeleccTxt{
+    color: white;
+    background-color: #03D6D0;
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.SeleccTxt:hover{
+    background-color: white;
+    color: black;
+}
+/*Ingreso*/
+.IngresoGeneral{
+    width: 80%;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Ingreso{
+    width: 80%;
+    background-color: white;
+    height: 550px;
+    display: flex;
+    border-radius: 38px;
+    justify-content: space-between;
+}
+.IngresoTxt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.IngresoTxt h1{
+    text-transform: uppercase;
+    margin-top: 60px;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+.cuadroTxt{
+    width: 400px;
+    height: 40px;
+}
+input{
+    letter-spacing: 1px;
+    border: 1px solid #FFC200;
+    padding-left: 15px;
+}
+input::placeholder{
+    color: #000000;
+    letter-spacing: 1px;
+}
+.btn-fila{
+    margin-top: 25px;
+}
+.btnEnvio{
+    color: white;
+    background-color: #03D6D0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px 32px;
+    border: 1px solid #03D6D0;
+    transition: all 0.3s ease;
+}
+.btnEnvio:hover{
+    background-color: white;
+    color: #000;
 }
 /*Perfil Viajero*/
 .banner-perfil{

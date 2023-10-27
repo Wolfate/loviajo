@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
@@ -23,32 +24,111 @@
                 </div>
             </div>
             <div class="Login">
-                <div class="Loginn">
-                    <img src="../assets/img/user-login.svg" alt="">
+                <a class="Loginn" href="../login/">
+                    <img src="../assets/img/user-login.svg" class="user-icon-blue">
+                    <img src="../assets/img/user-login-white.svg" class="user-icon-white">
                     <p>INGRESAR</p>
-                </div>
+                </a>
             </div>
         </div>
     </header>
+    <div id="Modal" class="modal">
+        <div class="modal1">
+            <div class="RegistroIzq">
+                <img class="logo-registro" width="330" src="../assets/img/logoloviajo.svg">
+                <h2>REGISTRARME</h2>
+                <div class="form">
+                    <form action="">
+                        <div class="FormRegistro">
+                            <input class="Registro" type="text" placeholder="Nombre*" maxlength="50" required id="inp-nombre" class="cuadroTxt">
+                            <input class="Registro" type="text"placeholder="Apellido*" maxlength="50" required id="inp-apellido" class="cuadroTxt">
+                            <input class="Registro" type="tel" placeholder="Teléfono" maxlength="10" required id="inp-telefono" class="cuadroTxt">
+                            <input class="Registro" type="date" placeholder="Fecha de nacimiento*" maxlength="50" required id="inp-nacimiento" class="cuadroTxt">
+                        </div>
+                        <div class="FormRegistro2">
+                            <input class="Registro1" type="text" placeholder="Correo*" maxlength="50" required id="inp-correo" class="cuadroTxt">
+                            <input class="Registro1" type="text" placeholder="Contraseña*" maxlength="50" required id="inp-contraseña" class="cuadroTxt">
+                        </div>
+                </form>
+                </div>
+                <div class="RegistroTxt">
+                    <button class="btn-Registro">Entrar</button>
+                    <p>Ya tengo cuenta. <a href="Ingreso.html">Ingresar</a></p>
+                </div>
+            </div>
+            <div class="RegistroDer">
+                <img src="../assets/img/img-modal-registro.webp">
+                <div id="btn-Cerrar" class="RegistroSalir">
+                    <img src="../assets/img/close.svg">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="MainBanner">
         <div class="Banner">
             <h1>Menos pretextos, más viajes</h1>
             <div class="Reseñas">
-                <div class="MainTxt">
-                    <p>Quiero agradecer a LoViajo, porque no habría pasado unas vacaciones tan perfectas 
-                        sin la atención y facilidades que me dieron. Si quieren salir y no preocuparse por
-                        ABSOLUTAMENTE NADA, sin duda pregunten por los paquetes todo incluido que tiene
-                        LoViajo. ¿Cuál será la próxima parada?
-                        Aldo Rivas</p>
+                <div class="ReseñaQuote">
+                    <img width="60" src="../assets/img/quote-1.svg">
                 </div>
-            </div>
-            <a href="WaRef">
-                <div class="Whats">
-                    <div class="WhatsTxt">
-                        <img class="WaImg" src="/WA.png" alt="">
-                        ¡CONTÁCTANOS!
+                <div id="ReseñaMain">
+                    <div class="MainTxt" id="itemReseña-1">
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-3">
+                                <img class="ReseñaFlecha flecha-izq" width="40" src="../assets/img/flecha izq.svg">
+                            </a>
+                        </div>   
+                        <div class="tarjetaReseña">
+                            <p class="resena-txt">Quiero agradecer a LoViajo, porque no habría pasado unas <strong>vacaciones tan perfectas</strong> sin la atención y facilidades que me dieron. Si quieren salir y no preocuparse por ABSOLUTAMENTE NADA, sin duda pregunten por los <strong>paquetes todo incluido</strong> que tiene LoViajo. ¿Cuál será la próxima parada?</p>
+                            <p class="resena-nombre">Aldo Rivas</p>
+                        </div>
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-2">
+                                <img class="ReseñaFlecha flecha-der" width="40" src="../assets/img/flecha der.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="MainTxt" id="itemReseña-2">
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-1">
+                                <img class="ReseñaFlecha flecha-izq" width="40" src="../assets/img/flecha izq.svg">
+                            </a>
+                        </div>   
+                        <div class="tarjetaReseña">
+                            <p class="resena-txt">Disfruté de unas vacaciones <strong>verdaderamente espectaculares</strong> gracias a su atención excepcional y las comodidades que ofrecen. Si buscas despreocuparte de TODO y vivir una <strong>experiencia inolvidable</strong>, no dudes en explorar sus paquetes todo incluido.</p>
+                            <p class="resena-nombre">Adrian Camacho</p>
+                        </div>
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-3">
+                                <img class="ReseñaFlecha flecha-der" width="40" src="../assets/img/flecha der.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="MainTxt" id="itemReseña-3">
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-2">
+                                <img class="ReseñaFlecha flecha-izq" width="40" src="../assets/img/flecha izq.svg">
+                            </a>
+                        </div>   
+                        <div class="tarjetaReseña">
+                            <p class="resena-txt">Mis sinceros agradecimientos a LoViajo por hacer de mis vacaciones una experiencia inigualable. Su atención y las facilidades que proporcionan son <strong>insuperables</strong>. Los paquetes todo incluido son la opción perfecta para aquellos que desean <strong>disfrutar al máximo</strong> sin preocupaciones.</p>
+                            <p class="resena-nombre">Sebastian Zuñiga</p>
+                        </div>
+                        <div class="Arrow-Box">
+                            <a href="#itemReseña-1">
+                                <img class="ReseñaFlecha flecha-der" width="40" src="../assets/img/flecha der.svg">
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div class="ReseñaQuote2">
+                    <img width="60" src="../assets/img/quote-2.svg">
+                </div>
+            </div>
+            <a class="Whats">
+                <img class="WaImg wa-white" width="35" src="../assets/img/whatsapp.svg">
+                <img class="WaImg wa-blue" width="35" src="../assets/img/whatsapp-blue.svg">
+                ¡CONTÁCTANOS!
             </a>
         </div>
     </div>
@@ -60,29 +140,23 @@
         <div class="MainPorque">
             <div class="InfoPorque">
                 <div class="Info">
-                    <img class="icon" src="../assets/img/avion.svg">
-                    somos Expertazos en destinos de playa nacionales.
-                </div>
-                <div class="Info">
-                    <img class="icon" src="../assets/img/globos.svg">
-                    organizamos tus pachangas, eventos y convenciones
-                </div>
-                <div class="Info">
-                    <img class="icon" src="../assets/img/mapa.svg">
-                    conoce nuestros Circuitos internacionales
-                </div>
-            </div>
-            <div class="InfoPorque2">
-                <div class="InfoPorque2Txt">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio rem 
-                    quia dolores at aut repellendus velit delectus, a, aperiam dicta quidem molestiae earum
-                    ipsam ad repudiandae hic, perspiciatis sunt.
-                </div>
-                 <div class="BotonInfo">
-                    <div class="BotonTxt">
-                        QUIERO MAS INFO
+                    <div class="info-icon-box">
+                        <img width="75" src="../assets/img/avion.svg">
                     </div>
-                 </div>
+                    <p>Somos Expertazos en destinos de <strong>playa nacionales</strong>.</p>
+                </div>
+                <div class="Info">
+                    <div class="info-icon-box">
+                        <img width="75" src="../assets/img/globos.svg">
+                    </div>
+                    <p><strong>Organizamos tus pachangas</strong>, eventos y convenciones</p>
+                </div>
+                <div class="Info">
+                    <div class="info-icon-box">
+                        <img width="75" src="../assets/img/mx.svg">
+                    </div>
+                    <p>conoce nuestros <strong>Circuitos internacionales</strong></p>
+                </div>
             </div>
         </div>
         <div class="NuestroClientes">
@@ -90,20 +164,115 @@
         </div>
         <div class="LineaPorque"></div>
         <div class="MainNuestrosClientes">
-            <div class="Ruleta">
-
-            </div>
             <div class="ClientesTxt">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur laborum voluptates
-                 similique commodi totam enim facere ratione necessitatibus, dicta qui. Aperiam dignissimos 
-                 excepturi reprehenderit atque laboriosam accusantium a quidem consequatur.
+                similique commodi totam enim facere ratione necessitatibus, dicta qui. Aperiam dignissimos 
+                excepturi reprehenderit atque laboriosam accusantium a quidem consequatur.
+            </div>
+            <div class="Ruleta">
+                <div class="logos-clientes">
+                    <div class="slide">
+                        <img src="../assets/img/hyatt-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/mercure-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/hilton-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/crowne-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/nickelodeon-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/dreams-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/riu-logo.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/barcelo-logo.svg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="../assets/img/hyatt-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/mercure-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/hilton-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/crowne-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/nickelodeon-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/dreams-logo.svg">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/riu-logo.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/img/barcelo-logo.svg">
+                    </div>
+                </div>   
             </div>
         </div>
         <div class="Crew">
             <div class="MainCrew">
-                
+                <div class="CrewTxt">
+                    <h3>¿Ya eres parte de CREW <img src="../assets/img/loviajo-txt.svg"> ? </h3>
+                    <div class="LineaCrew"></div>
+                </div>
+                <div class="SeleccionCrew">
+                    <div class="Selecc">
+                        <img src="../assets/img/logo-yamelase.svg">
+                        <a class="SeleccTxt" href="../login/">
+                            YA ME LA SÉ
+                        </a>
+                    </div>
+                    <div class="Selecc">
+                        <img src="../assets/img/logo-serparte.svg">
+                        <div id="btn-Modal" class="SeleccTxt">
+                            <p>¡QUIERO SER PARTE!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <p>Copyright &copy; 2023 Lo Viajo - Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        //Modal
+        let btnModal = document.getElementById('btn-Modal');
+        let btnCerrar = document.getElementById('btn-Cerrar');
+        let modal = document.getElementById('Modal');
+
+        btnModal.onclick = function(){
+            modal.style.visibility = "visible";
+        }
+
+        btnCerrar.onclick = function(){
+            modal.style.visibility = "hidden";
+        }
+
+        //Reseñas
+        let resena = document.querySelector('#ReseñaMain');
+
+        resena.addEventListener('click', e=>{
+            var x = window.pageXOffset,
+            y = window.pageYOffset;
+            $(window).one('scroll', function(){
+                window.scrollTo(x,y);
+            });
+        });
+    </script>
 </body>
 </html>
